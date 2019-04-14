@@ -17,6 +17,7 @@
         String pwd = request.getParameter("password");
         LoginDao loginDao = new LoginDao();
         int result = loginDao.login(name,pwd);
+        System.out.println(result);
         if(result == 1){
 //            out.print("登录成功");
             request.setAttribute("tips","登录成功");

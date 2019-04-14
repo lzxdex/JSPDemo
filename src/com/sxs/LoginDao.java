@@ -15,14 +15,16 @@ public class LoginDao {
         int count = 0;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn= DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mydata","root","1234");
+            conn= DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mydata","root","");
             String sql = "select * from users where UserName = ? and PasswordCode = ? and IsUse = 1";
             pstmt  = conn.prepareStatement(sql);
             pstmt.setString(1,name);
             pstmt.setString(2,pwd);
             ResultSet rs = pstmt.executeQuery();
             if(rs.next()){
-                count = rs.getInt(1);
+                if(rs.getInt(1)!=0){
+                    count = 1;
+                }
             }
         }catch (SQLException e) {
             e.printStackTrace();
