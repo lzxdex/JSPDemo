@@ -1,0 +1,40 @@
+body{
+    height: 800px;
+}
+.content{
+    width: 400px;
+    height: 300px;
+    margin: 300px auto;
+    background-color: moccasin;
+}
+.content_title{
+    width: 400px;
+    height: 50px;
+    background-color: orangered;
+    text-align: center;
+    font-size: 23px;
+    color: #fff;
+}
+.content_bottom{
+    margin-top: 50px;
+    text-align: center;
+}
+input{
+    width: 200px;
+    height: 30px;
+}
+.login{
+    height: 40px;
+    background-color: orangered;
+    border: none;
+    color: #fff;
+}
+h5{
+    text-align: center;
+    padding-top: 15px;
+}
+.tips{
+    color: red;
+    font-size: 15px;
+}
+
