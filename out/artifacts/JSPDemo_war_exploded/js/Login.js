@@ -1,7 +1,7 @@
 function check(form){
     var name=form.name.value;
     var password=form.password.value;
-    var tip=document.getElementById("tips");
+    var tip=document.getElementById("ptips");
     if(name === "" ||password === ""){
         // alert("用户名或密码不能为空哦~");
         tip.innerHTML="用户名或密码不能为空哦~";

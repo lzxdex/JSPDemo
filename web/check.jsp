@@ -12,16 +12,14 @@
 </head>
 <body>
     <%
-
         String name = request.getParameter("name");
         String pwd = request.getParameter("password");
         LoginDao loginDao = new LoginDao();
         int result = loginDao.login(name,pwd);
-        System.out.println(result);
         if(result == 1){
 //            out.print("登录成功");
             request.setAttribute("tips","登录成功");
-            request.getRequestDispatcher("index.jsp").forward(request,response);
+           request.getRequestDispatcher("index.jsp").forward(request,response);
         }else if (result == 0){
 //            out.print("登录失败");
             request.setAttribute("tips","用户名或密码输入错误！");
@@ -29,7 +27,6 @@
         }else{
             out.print("系统异常");
         }
-
     %>
 </body>
 </html>

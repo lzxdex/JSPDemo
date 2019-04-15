@@ -29,7 +29,7 @@
             <input type="text" name="name" placeholder="    用户名" onkeydown="nameCheck(form)"><br/>
             <label id="ptips" class="tips"><%=t%></label><br/>
             <input id="pwd" type="password" name="password" placeholder="    密码" onkeydown="pcheck(form)"><p>
-            <input class="login" type="submit" value="登录">
+            <input class="login" type="submit" value="登录" onsubmit="return check(form)">
         </form>
     </div>
 </div>

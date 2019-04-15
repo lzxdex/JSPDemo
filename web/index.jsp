@@ -1,10 +1,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>登录界面</title>
-    <link href="css/Login.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>中国景点</title>
 </head>
 <body>
-这是主页
+    主页
 </body>
 </html>
+
